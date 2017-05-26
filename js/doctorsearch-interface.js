@@ -3,12 +3,26 @@ var DoctorSearch = require ('./../js/doctorsearch.js').doctorSearchModule;
 var displayDoctors = function(result) {
   $('.list-of-docs').text("");
   result.data.forEach(function(doctor) {
-    $('.list-of-docs').append(`<li>${doctor.profile.first_name} ${doctor.profile.last_name}
+    var doctorWebsite;
+    if(typeof doctor.practices[0].website == 'undefined'){
+      doctorWebsite = "N/A";
+    } else {
+      doctorWebsite = `<a>${doctor.practices[0].website}</a>`;
+    }
+    $('.list-of-docs').append(
+      `<li>${doctor.profile.first_name} ${doctor.profile.last_name}
         <ul>
-          <li>Facility:   ${doctor.practices[0].name}</li>
-          <li>Location:   ${doctor.practices[0].visit_address.street},  ${doctor.practices[0].visit_address.city}, ${doctor.practices[0].visit_address.state}  ${doctor.practices[0].visit_address.zip}</li>
+          <li>Facility: ${doctor.practices[0].name}</li>
+          <li>Location:
+            ${doctor.practices[0].visit_address.street},
+            ${doctor.practices[0].visit_address.city},
+            ${doctor.practices[0].visit_address.state}
+            ${doctor.practices[0].visit_address.zip}
+          </li>
+          <li>Website: ${doctorWebsite}</li>
         </ul>
-      </li>`);
+      </li>`
+    );
   });
 };
 
