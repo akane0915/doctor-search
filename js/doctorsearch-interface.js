@@ -37,7 +37,6 @@ var displaySpecialities = function(result) {
 };
 
 $(document).ready(function(){
-
   var newDoc = new DoctorSearch();
   newDoc.returnSpecialities(displaySpecialities);
 
@@ -46,7 +45,6 @@ $(document).ready(function(){
     var specialtyInput = $('#specialty-input').val();
     var newDoctorSearch = new DoctorSearch();
     newDoctorSearch.getDoctors(specialtyInput, displayDoctors, displayNoDoctors);
-
   });
 
   $('#search-by-symptom').click(function() {
@@ -55,5 +53,4 @@ $(document).ready(function(){
     var newDoctorSearch = new DoctorSearch();
     newDoctorSearch.getDoctors(symptomInput, displayDoctors, displayNoDoctors);
   });
-
 }); // Document Ready Close

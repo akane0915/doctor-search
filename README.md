@@ -2,9 +2,10 @@
 
 #### _Find a doctor in your area!  This application allows a user to input a symptom or medical specialty and returns a list of doctors nearby (Portland, OR) to treat their medical issue.  May 26, 2017_
 
-_View this project at:             _
-
 #### By _**Asia Kane**_
+
+### Screen Shot
+![Homepage](img/screenshot.png)
 
 ## Description
 
@@ -58,8 +59,3 @@ _I encourage you to update/make suggestions/refactor this code as you see fit. I
 ### License
 *This software is licensed under the MIT license*
 Copyright © 2017 **Asia Kane**
-
-### Screen Shots
-
-### Homepage
-![Homepage]()
