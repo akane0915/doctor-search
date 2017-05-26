@@ -1,6 +1,17 @@
-# <!--PROJECT NAME HERE-->
+# _Spot a Doc_
 
-This project will save the world!
+#### _Find a doctor in your area!  This application allows a user to input a symptom and returns a list of doctors nearby to treat their medical issue.  May 26, 2017_
+
+_View this project at:             _
+
+#### By _**Asia Kane**_
+
+## Description
+
+This application makes it convenient and quick for a user to find a nearby doctor to treat a particular medical condition.  The application utilizes the Better Doctor API in the JSON format https://developer.betterdoctor.com/. (Sign Up for your own API key to test this app, and follow the setup instructions below to create a .env file).  
+
+The application is written in JavaScript and its dependencies are conveniently managed by Node Package Manager and Bower.  It can be run via a development server and uses a Gulp based asset pipeline which includes concatenation, minification, browserify, live reloading, build and clean (delete) tasks, and automatic updates of js (vendor.min.js) and css (vendor.css) files through Bower dependencies.     
+
 
 ### Prerequisites
 
@@ -11,54 +22,42 @@ Examples: Chrome, Safari
 * bower
 * ruby
 
-### Installing
+## Setup/Installation Requirements
+* _In a terminal window, clone this repository to your machine and navigate to the file path_
+* _Run $npm install_
+* _Run $bower install_
+* _Create a file in the top level of your project folder titled ".env"_
+* _Type this into the file: exports.apiKey = "Your API Key goes here in quotes";_
+* _Save the .env file_
+* _Run $gulp build_
+* _Run $gulp serve_
+* _If you would like to make changes to this project, do so in the text editor_
+* _Make frequent commits with detailed comments_
+* _Submit changes as pull request to Asia at akane0915 on Github_
 
-These instructions have been verified to work on MacOS.
+## Known Bugs
+_N/A_
 
-There are a few terminal commands you will need to run to get the app to launch locally on your machine. First though, you will need to clone this repository to your machine and navigate to its folder in your terminal.
+## Support and contact details
+_I encourage you to update/make suggestions/refactor this code as you see fit. I am always open to improvement! Please contact Asia Kane at asialkane@gmail.com with questions._
 
-Once you have navigated to the correct directory, you will run the following commands:
-
-* bower install
-* npm install
-* gulp serve
-
-The required packages may take a few minutes to download and install due to the speed of your machine and your Internet connection. The last command should launch the app in your browser! That's it!
-
-## Built With
-
-* HTML
-* CSS/SASS
-* Bootstrap https://getbootstrap.com/
-* ES6
-* Jquery https://jquery.com/
+## Technologies Used
+* JavaScript
 * Node
 * Bower
+* AJAX
+* API integration (JSON)
+* jQuery
+* CSS (SASS)
+* Bootstrap
+* HTML
+* ES6
 
-## Authors
+### License
+*This software is licensed under the MIT license*
+Copyright © 2017 **Asia Kane**
 
-* <!--YOUR NAME HERE-->
+### Screen Shots
 
-## License
-
-MIT License
-
-Copyright (c) <!--YOUR NAME & YEAR HERE-->
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+### Homepage
+![Homepage]()
