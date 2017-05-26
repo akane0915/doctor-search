@@ -26,8 +26,9 @@ Examples: Chrome, Safari
 * _In a terminal window, clone this repository to your machine and navigate to the file path_
 * _Run $npm install_
 * _Run $bower install_
+* _Sign up for your own API Key at https://developer.betterdoctor.com/_
 * _Create a file in the top level of your project folder titled ".env"_
-* _Type this into the file: exports.apiKey = "Your API Key goes here in quotes";_
+* _Type in your .env file: exports.apiKey = "Your API Key goes here in quotes";_
 * _Save the .env file_
 * _Run $gulp build_
 * _Run $gulp serve_

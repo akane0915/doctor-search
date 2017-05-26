@@ -1,0 +1,35 @@
+// Fonts
+$header1_font : 'Raleway', sans-serif;
+$header2_font : 'Playfair Display', serif;
+$main_font : 'Open Sans', sans-serif;
+
+// Colors
+$gray : #F8F8F8;
+$green : #DCFFD1;
+$pink : #ffd1dc;
+
+body {
+  background-color: $gray;
+  text-align: center;
+}
+
+.jumbotron {
+  background-color: $green;
+  min-height: 500px;
+  text-align: center;
+  h1 {
+    font-family: $header1_font;
+    font-weight: bold;
+    font-size: 7em;
+    letter-spacing: 2px;
+  }
+  h3{
+    font-family: $header2_font;
+    letter-spacing: 2px;
+  }
+}
+
+footer {
+  background-color: $pink;
+  min-height: 200px;
+}
