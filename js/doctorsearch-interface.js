@@ -30,12 +30,29 @@ var displayNoDoctors = function() {
   $('.list-of-docs').html(`<p>Your search did not return any results.  Consider visiting an urgent care facility in your area by visiting <a>https://www.urgentcarelocations.com/.</a></p>`);
 };
 
+
 $(document).ready(function(){
+  var displaySpecialities = function(result) {
+    console.log(result.data[0].name);
+    $('#specialy-input').append(`<option>${result.data[0].name}</option>`);
+  };
+  
+  var newDoc = new DoctorSearch();
+  newDoc.returnSpecialities(displaySpecialities);
+
+
+  $('#search-by-specialty').click(function() {
+    var specialtyInput = $('#specialy-input').val();
+    var newDoctorSearch = new DoctorSearch();
+    newDoctorSearch.getDoctors(specialtyInput, displayDoctors, displayNoDoctors);
+
+  });
+
   $('#search-by-symptom').click(function() {
     var symptomInput = $('#symptom-input').val();
     $('#symptom-input').val("");
     var newDoctorSearch = new DoctorSearch();
-    newDoctorSearch.searchBySymptom(symptomInput, displayDoctors, displayNoDoctors);
-
+    newDoctorSearch.getDoctors(symptomInput, displayDoctors, displayNoDoctors);
   });
+
 }); // Document Ready Close
