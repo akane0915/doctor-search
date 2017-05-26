@@ -8,10 +8,7 @@ $gray : #F8F8F8;
 $green : #DCFFD1;
 $pink : #ffd1dc;
 
-body {
-  background-color: $gray;
-  text-align: center;
-}
+
 
 .jumbotron {
   background-color: $green;
@@ -19,13 +16,28 @@ body {
   text-align: center;
   h1 {
     font-family: $header1_font;
-    font-weight: bold;
+    font-weight: bolder;
     font-size: 7em;
     letter-spacing: 2px;
+    margin: 50px 0;
   }
   h3{
-    font-family: $header2_font;
+    font-family: $header1_font;
+    font-size: 3em;
+    font-weight: bolder;
     letter-spacing: 2px;
+  }
+}
+
+body {
+  background-color: $gray;
+  text-align: center;
+  font-family: $main_font;
+  h1{
+    font-family: $header1_font;
+  }
+  li {
+    text-align: left;
   }
 }
 
