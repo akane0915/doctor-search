@@ -4,7 +4,6 @@
 
 #### By _**Asia Kane**_
 
-### Screen Shot
 ![Homepage](img/screenshot.png)
 
 ## Description
