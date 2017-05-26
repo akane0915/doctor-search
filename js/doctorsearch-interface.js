@@ -1,11 +1,10 @@
-var apiKey = require('./../.env').apiKey;
-
-DoctorSearch = require ('./../js/doctorsearch.js').DoctorSearchModule;
+var DoctorSearch = require ('./../js/doctorsearch.js').doctorSearchModule;
 
 $(document).ready(function(){
   $('#generate-doctors').click(function() {
     var symptomInput = $('#symptom-input').val();
-    console.log(symptomInput);
+    var newDoctorSearch = new DoctorSearch();
+    newDoctorSearch.searchBySymptom(symptomInput);
 
   });
-});
+}); // Document Ready Close
