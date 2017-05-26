@@ -30,13 +30,14 @@ var displayNoDoctors = function() {
   $('.list-of-docs').html(`<p>Your search did not return any results.  Consider visiting an urgent care facility in your area by visiting <a>https://www.urgentcarelocations.com/.</a></p>`);
 };
 
+var displaySpecialities = function(result) {
+  result.data.forEach(function(entry){
+    $('#specialty-input').append(`<option>${entry.name}</option>`);
+  });
+};
 
 $(document).ready(function(){
-  var displaySpecialities = function(result) {
-    console.log(result.data[0].name);
-    $('#specialy-input').append(`<option>${result.data[0].name}</option>`);
-  };
-  
+
   var newDoc = new DoctorSearch();
   newDoc.returnSpecialities(displaySpecialities);
 
