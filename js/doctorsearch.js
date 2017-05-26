@@ -11,14 +11,18 @@ DoctorSearch.prototype.searchBySymptom = function (symptom, displayDoctors, disp
       } else {
         displayDoctors(result);
       }
-    })
-  .fail(function(error) {
+    }).fail(function(error) {
      $('.list-of-docs').text(error.responseJSON.message);
    });
 };
 
 DoctorSearch.prototype.returnSpecialities = function() {
-  // $.get(`https://api.betterdoctor.com/2016-03-01/specialties?fields=name&user_key=${apiKey}`)
+  $.get(`https://api.betterdoctor.com/2016-03-01/specialties?fields=name&user_key=${apiKey}`)
+    .then(function(result) {
+      console.log(result);
+    }).fail(function(error) {
+       $('.list-of-docs').text(error.responseJSON.message);
+     });
 };
 
 exports.doctorSearchModule = DoctorSearch;

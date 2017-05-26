@@ -18,9 +18,21 @@
     </div>
     <div class="container">
       <h1>Stop the pain. Search below.</h1>
+      <h4>Search for a doctor by medical specialty or symptom.</h4>
+
+      <!-- Specialty search -->
+      <label for="specialty-input">Pick a medical specialty:</label>
+      <select class="form-group" id="specialty-input">
+        <option></option>
+        
+      </select>
+      <button class="btn btn-default" id="search-by-specialty">Search by Specialty</button>
+      <hr>
+
+      <!-- Symptom search -->
       <label for="symptom-input">Enter your medical symptom:</label>
       <input id="symptom-input" type="text">
-      <button class="btn btn-default" id="generate-doctors">Generate List of Docs!</button>
+      <button class="btn btn-default" id="search-by-symptom">Search by Symptom</button>
       <ol class="list-of-docs">
 
       </ol>

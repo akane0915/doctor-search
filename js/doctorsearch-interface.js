@@ -31,7 +31,7 @@ var displayNoDoctors = function() {
 };
 
 $(document).ready(function(){
-  $('#generate-doctors').click(function() {
+  $('#search-by-symptom').click(function() {
     var symptomInput = $('#symptom-input').val();
     $('#symptom-input').val("");
     var newDoctorSearch = new DoctorSearch();
