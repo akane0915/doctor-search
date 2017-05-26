@@ -8,7 +8,9 @@ _View this project at:             _
 
 ## Description
 
-This application makes it convenient and quick for a user to find a nearby doctor to treat a particular medical condition.  It allows the user to type a symptom or to select a medical specialty from a drop down menu. The application utilizes the Better Doctor API in the JSON format https://developer.betterdoctor.com/. (Sign Up for your own API key to test this app, and follow the setup instructions below to create a .env file).  
+This application makes it convenient and quick for a user to find a nearby doctor to treat a particular medical condition.  It allows the user to type a symptom or to select a medical specialty from a drop down menu. The searches return the doctor name, facility, address, and website if applicable.  
+
+The application utilizes the Better Doctor API in the JSON format https://developer.betterdoctor.com/. (Sign Up for your own API key to test this app, and follow the setup instructions below to create a .env file). If no results are returned, the application displays an error message.
 
 The application is written in JavaScript and its dependencies are conveniently managed by Node Package Manager and Bower.  It can be run via a development server and uses a Gulp based asset pipeline which includes concatenation, minification, browserify, live reloading, build and clean (delete) tasks, and automatic updates of js (vendor.min.js) and css (vendor.css) files through Bower dependencies.     
 

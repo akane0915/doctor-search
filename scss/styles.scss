@@ -8,7 +8,10 @@ $gray : #F8F8F8;
 $green : #DCFFD1;
 $pink : #ffd1dc;
 
-
+html {
+    position: relative;
+    min-height: 100%;
+}
 
 .jumbotron {
   background-color: $green;
@@ -33,6 +36,8 @@ body {
   background-color: $gray;
   text-align: center;
   font-family: $main_font;
+  margin: 0 0 200px; /* bottom = footer height */
+
   h1{
     font-family: $header1_font;
   }
@@ -42,6 +47,10 @@ body {
 }
 
 footer {
-  background-color: $pink;
-  min-height: 200px;
+    background-color: $pink;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 200px;
+    width: 100%;
 }
