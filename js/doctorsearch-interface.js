@@ -43,7 +43,7 @@ $(document).ready(function(){
 
 
   $('#search-by-specialty').click(function() {
-    var specialtyInput = $('#specialy-input').val();
+    var specialtyInput = $('#specialty-input').val();
     var newDoctorSearch = new DoctorSearch();
     newDoctorSearch.getDoctors(specialtyInput, displayDoctors, displayNoDoctors);
 
